@@ -1,0 +1,14 @@
+{
+  "name": "bybit-screener",
+  "version": "1.0.0",
+  "description": "Screener for Bybit based on CCI",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bybit CCI Screener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bybit CCI Screener</h1>
+        <p>Поиск монет по комбинации индикаторов CCI (200) и CCI (13).</p>
+
+        <div class="controls">
+            <label for="timeframe">Таймфрейм:</label>
+            <select id="timeframe">
+                <option value="5">5 минут</option>
+                <option value="15">15 минут</option>
+                <option value="60">1 час</option>
+                <option value="240">4 часа</option>
+            </select>
+
+            <label for="min-volume">Мин. объем за 24ч (USDT):</label>
+            <input type="number" id="min-volume" value="1000000" min="0">
+
+            <button id="scan-btn">Запустить сканирование</button>
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">Загрузка данных с Bybit...</div>
+        <div id="error-message" class="error" style="display: none;"></div>
+
+        <div class="results">
+            <h2>Результаты</h2>
+            <table id="results-table">
+                <thead>
+                    <tr>
+                        <th>Символ</th>
+                        <th>Текущая цена</th>
+                        <th>Объем за 24ч (USDT)</th>
+                        <th>CCI (200)</th>
+                        <th>CCI (13)</th>
+                        <th>Сигнал</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Сюда будут добавляться строки -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
