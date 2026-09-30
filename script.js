@@ -1,7 +1,7 @@
 // script.js
 
 // --- Константы ---
-const BYBIT_PROXY_URL = '/.netlify/functions/bybit-proxy';
+const BYBIT_PROXY_URL = 'https://bybit-screener-3dadwrxon-vladimir-e213.vercel.app/api/bybit-proxy';
 const CCI_SHORT_PERIOD = 13;
 const CCI_LONG_PERIOD = 200;
 const CCI_CONSTANT = 0.015;

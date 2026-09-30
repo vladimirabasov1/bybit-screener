@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "regions": ["fra1"],
+  "functions": {
+    "api/bybit-proxy.js": {
+      "maxDuration": 10
+    }
+  }
+}
